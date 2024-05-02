@@ -9,9 +9,9 @@ html,body{
     height: 100%;
     color: #fff;
     background-color: #151515;
-    /* font-family: 'Handlee',cursive; */
+    font-family: 'Handlee',cursive;
     /* font-weight: 900; */
-    font-family: "Josefin Slab", serif;
+    /* font-family: "Josefin Slab", serif; */
     font-weight: 4vw;
     transition: all ease cubic-bezier(0.075, 0.82, 0.165, 1) 0.3;
     scroll-behavior: smooth;
@@ -48,20 +48,11 @@ html,body{
     display: flex;
     gap: 10vh;
 }
-a{
-    text-decoration: none;
-    color: white;
-}
-#main{
-    width: 100%;
-    height: 100%;
-    /* background-color: skyblue; */
-}
 #homeContent{
-    /* margin-top: 7vh; */
+    margin-top: 7vh;
     padding: 1%;
     width: 100%;
-    height:100%;
+    height: calc(100% - 8vh);
     /* background-color: skyblue; */
 }
 #logo{
@@ -78,7 +69,7 @@ a{
 #tagline{
     font-size: 3.5vh;
     position: relative;
-    margin: 20vh 15vh;
+    margin: 15vh;
     transform: translateX(-50%);
     left: 45%;
 }
@@ -107,10 +98,9 @@ a{
 }
 #about .people img{
     position: relative;
-    width: 25vh;
-    height: 25vh;
+    width: 30vh;
+    height: 30vh;
     object-fit: cover;
-    border-radius: 5vh;
     object-position: top;
 }
 #about .people h3{
@@ -130,80 +120,106 @@ a{
     height: calc(100% - 55vh);
     /* background-color: #2bff00; */
 }
-.article {
-    margin-top: 5vh;
+.article{
+    margin-top: 8vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 100%;
+    /* background-color: greenyellow; */
 }
-
-.article h2 {
+.article h2{
     padding: 2vh;
     /* color: #2bff00; */
     font-family: 'julee',cursive;
     font-size: 7vh;
     color: #2bff00;
 }
-
-.article h3 {
+.article h3{
     padding: 2vh;
+    /* color: #2bff00; */
     font-size: 3.5vh;
     color: #2bff00;
-    text-align: center; /* Center alignment */
 }
-
-.article p {
-    width: 90%;
-    margin: 0 auto;
-    font-size: 2.5vh;
-    padding: 5vh 0;
-    text-align: justify; /* Justify alignment */
-}
-
-.items {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    gap: 1.5vh;
-}
-
-.items h3 {
-    padding: 2vh;
-    font-family: 'julee', cursive;
-    font-size: 4.5vh;
-    color: #2bff00;
-    text-align: left; /* Left alignment */
-}
-
-.items p {
-    padding: 0vh 10vh;
+.article p{
+    width: 95%;
+    margin:0 auto;
+    font-size: 3.5vh;
+    padding: 10vh;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5vh;
+}
+.items{
+    width: 100%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: 70% 35%;
+    grid-template-rows: 100%;
+}
+.items h3{
+    padding: 2vh;
+    /* color: #2bff00; */
+    font-family: 'julee',cursive;
+    font-size: 7vh;
+    color: #2bff00;
+}
+.items #p2, #p3{
+    width: 100%;
     font-size: 3.5vh;
-    text-align: justify; /* Justify alignment */
+    /* padding: 10vh; */
+    text-align: center;
+}
+.items img{
+    border-radius: 10vh;
+    width: 50vh;
+    height: 60vh;
+    object-fit: cover;
+    object-position: center;
+}
+#img1{
+    margin: 25vh -2vh;
+}
+#item-1{
+    padding: 5vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5vh;
+    flex-direction: column;
+    /* background-color: orange; */
+}
+#item-2{
+    margin-top: 5vh;
+    padding: 5vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5vh;
+    flex-direction: column;
 }
 
-.items img {
-    position: relative;
-    top: 25vh;
-    border-radius: 2vh;
+.items #p4, #p5{
     width: 100%;
-    margin-left: 5vh;
-    object-fit: cover;
-    width: 35vh;
-    height: 35vh;
-}
-#p1{
     font-size: 3.5vh;
+    /* padding: 10vh; */
+    text-align: center;
 }
-.quote{
-    font-size:3vh !important;
+.items #img2{
+        margin: 25vh -2vh;
+}
+.items #p6{
     width: 100%;
-    color: #2bff00;
+    font-size: 4.5vh;
+    /* padding: 10vh; */
+    text-align: center;
 }
-.author{
-    color: #2bff00;
+.items #img3{
+    margin: 15vh -2vh;
+}
+#item-3 {
+    margin-top: -8vh;
+    padding: 5vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 5vh;
+    flex-direction: column;
 }
