@@ -207,3 +207,140 @@ a{
 .author{
     color: #2bff00;
 }
+#h1{
+    color: #2bff00;
+    font-size: 2.5vw;
+
+}
+#k1{
+    font-size: 1.7vw;
+    padding: 5vh 10vh;
+    line-height: 4.5vh;
+}
+.article1-section {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 1.5vh;
+}
+
+.article1 {
+    margin-top: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article1 h3 {
+    padding: 2vh;
+    font-family: 'julee', cursive;
+    font-size: 4.5vh;
+    color: #2bff00;
+    text-align: center;
+}
+
+.article1 p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 3.5vh;
+    padding: 5vh 0;
+    text-align: justify;
+}
+
+.items1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.items1 h3 {
+    padding: 2vh;
+    font-family: 'julee', cursive;
+    font-size: 4.5vh;
+    color: #2bff00;
+    text-align: left;
+}
+
+.items1 p {
+    padding: 0vh 10vh;
+    text-align: justify;
+    font-size: 3.5vh;
+}
+
+.items1 img {
+    border-radius: 2vh;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+blockquote {
+    width: 70%;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.562), #f0f0f054);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid #2bff00;
+}
+
+blockquote p {
+    text-align: center;
+    font-family: 'julee', cursive;
+    margin: 0;
+    font-size: 3vh;
+    color: white;
+    text-align: center;
+}
+
+blockquote p::before {
+    content: open-quote;
+    font-size: 40px;
+    margin-right: 5px;
+    color: #2bff00;
+}
+
+blockquote p::after {
+    position: relative;
+    content: close-quote;
+    font-size: 40px;
+    margin-left: 5px;
+    top: 0px;
+    color: #2bff00;
+}
+
+blockquote p br {
+    display: none;
+}
+
+blockquote p::first-letter {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2bff00;
+}
+
+blockquote p::selection {
+    background-color: #2bff00;
+    color: #ffffff;
+}
+
+blockquote p {
+    position: relative;
+}
+
+blockquote p::before {
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+
+blockquote p::after {
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+}
+
+blockquote:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
