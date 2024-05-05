@@ -105,10 +105,11 @@ a{
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 30vh;
+    width: 41vh;
     height: 30vh;
-    /* object-fit: cover; */
-    margin: 5vh;    
+    object-fit: cover;
+    margin: 5vh;
+    margin-left: 5vh;    
     /* background-color: red; */
 }
 #about .people img{
@@ -121,8 +122,11 @@ a{
 }
 #about .people h3{
     position: relative;
-    padding: 0vh 9vh;
-    justify-content: center;
+    width: 100%;
+    padding: 0vh 5.6vh;
+    font-size: 3vh;
+    align-items: center;
+    justify-content: center;;
 }
 #teamIntro{
     position: relative;
@@ -750,4 +754,9 @@ blockquote:hover {
     bottom: 0;
     padding: 1vh;
     gap: 5vh;
+}
+
+#tagline{
+    text-align: center;
+    left: 42%;
 }

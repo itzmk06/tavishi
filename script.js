@@ -6,7 +6,7 @@ function cursorAnimation(){
       duration: 0.5,
   });
   
-  Shery.makeMagnet("a ,#logo" , {
+  Shery.makeMagnet("a ,#logo,img" , {
       ease: "cubic-bezier(0.23, 1, 0.320, 1)",
       duration: 1,
   });
@@ -96,8 +96,8 @@ particles.forEach((particle, index) => {
 
 const aboutTimeline = gsap.timeline({ defaults: { duration: 1, ease: "elastic.out(1, 0.3)" } });
 aboutTimeline.from("#aboutText", { opacity: 1, y: -50 })
-            .from(".people", { opacity: 0, y: 50, stagger: 0.2 }, "-=0.5")
-            .from("#teamIntro", { opacity: 0, y: 50 }, "-=0.5");
+            .from(".people", { opacity: 1, y: 50, stagger: 0.2 }, "-=0.5")
+            .from("#teamIntro", { opacity: 1, y: 50 }, "-=0.5");
 
 const people = document.querySelectorAll(".people");
 people.forEach(person => {
