@@ -424,9 +424,7 @@ blockquote:hover {
     color: #fff;
 }
 
-.table tbody tr:nth-of-type(odd) {
-    /* background-color: #f8f9fa; */
-}
+
 
 .table tbody tr:hover {
     color:black;
@@ -478,4 +476,264 @@ blockquote:hover {
     margin: 0 auto;
     position: relative;
     left: 38.5%;
+}
+
+.custom-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table th, .custom-table td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.custom-table th {
+    color: #333;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #00ff15;
+}
+
+.custom-table th:first-child,
+.custom-table td:first-child {
+    border-left: none;
+}
+
+.custom-table th:last-child,
+.custom-table td:last-child {
+    border-right: none;
+}
+
+.custom-table thead th:first-child,
+.custom-table tbody td:first-child {
+    border-top-left-radius: 15px;
+}
+
+.custom-table thead th:last-child,
+.custom-table tbody td:last-child {
+    border-top-right-radius: 15px;
+}
+
+.custom-table tbody tr:last-child td:first-child,
+.custom-table tbody tr:last-child td:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.causes-section {
+    position: relative;
+    padding: 6vh;
+}
+
+.section-title {
+    color: #00ff00;
+    font-size: 4vh;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.causes-list ul {
+    padding-left: 0;
+}
+
+.causes-list li {
+    margin-bottom: 30px;
+}
+
+.cause-title {
+    color: #007bff;
+    font-size: 3.5;
+    font-weight: bold;
+    font-family: "Kalam", cursive;
+    margin-bottom: 10px;
+}
+
+.cause-description {
+    font-size:3vh;
+    line-height: 1.6;
+
+}
+
+.causes-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.initiatives-section {
+    padding: 3vh 3vh;
+}
+
+.section-title {
+    color: #15ff00;
+    font-size: 4vh;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.initiatives-list ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.initiatives-list li {
+    margin-bottom: 20px;
+}
+
+.initiative-title {
+    color: #007bff;
+    font-size: 3.5vh;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.initiative-description {
+    font-size: 3vh;
+    line-height: 1.6;
+}
+
+.quote {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 30px;
+}
+
+#facts-section {
+    padding: 2vh;
+}
+
+.facts-content,
+.ranking-content {
+    padding: 0 15px;
+}
+
+.section-title {
+    margin-top: 7vh;
+    font-size: 4px;
+    font-weight: bold;
+    color: rgb(0, 255, 0);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.facts-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.facts-content .fact-title {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.ranking-content p {
+    font-size: 18px;
+    color: white;
+    line-height: 1.8;
+}
+#karnataka-education {
+    padding: 50px 0;
+}
+
+.education-content {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 4vh;
+    font-weight: bold;
+    color: #00ff0d;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.education-content p {
+    font-size: 3vh;
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.education-content p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+    .education-content {
+        padding: 1vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-content {
+        padding: 1vh;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .education-content p {
+        font-size: 3vh;
+    }
+}
+
+
+.case-study {
+    padding: 5vh;
+}
+
+.section-title {
+    font-size: 4vh;
+    font-weight: bold;
+    color: #00ff37;
+    text-transform: uppercase;
+}
+
+.case-title {
+    font-size: 3.5vh;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.case-description {
+    font-size: 3vh;
+    color: white;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .case-study {
+        padding: 20px;
+    }
+}
+
+.format-h{
+    width: 50vh;
+    height: 40vh;
+    border-radius: 5vh;
+    object-fit: cover;
+    object-position: top;
+}
+.move{
+    margin-left: 5vh;
 }
