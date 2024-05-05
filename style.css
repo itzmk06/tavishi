@@ -15,9 +15,9 @@ html,body{
     font-weight: 4vw;
     transition: all ease cubic-bezier(0.075, 0.82, 0.165, 1) 0.3;
     scroll-behavior: smooth;
-    background: url('bg.png');
-    background-position: center;
-    background-size: cover;
+    /* background: url('bg.png'); */
+    /* background-position: center; */
+    /* background-size: cover; */
 }
 #main{
     width: 100%;
@@ -434,3 +434,48 @@ blockquote:hover {
     background-color: #00ff15;
 }
 
+.card {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2bff00;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 3vh;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+.card-img{
+    object-fit: cover;
+    object-position: center;
+    width: 50vh;
+    height: 40vh;
+    border-radius:5vh;
+    margin: 0 auto;
+    position: relative;
+    left: 38.5%;
+}
